@@ -14,8 +14,7 @@ class Homepage extends StatelessWidget {
       ),
       body: Center(
         child: Container(
-          child: Text(
-              "My First Flutter App in $days days by $Name"), //$ is called String Interpolation
+          child: Text("My First Flutter App in $days days by $Name"),
         ),
       ),
       drawer: Drawer(),
