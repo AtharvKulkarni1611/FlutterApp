@@ -23,10 +23,11 @@ class MyApp extends StatelessWidget {
           primarySwatch: Colors.deepPurple,
           fontFamily: GoogleFonts.lato().fontFamily,
         ),
+        debugShowCheckedModeBanner: false,
         initialRoute: "/",
         routes: {
-          "/": (context) => Loginpage(),
-          MyRoutes.homeroute: (context) => Homepage(),
+          "/": (context) => Homepage(),
+          MyRoutes.homeRoute: (context) => Homepage(),
           MyRoutes.loginRoute: (context) => Loginpage()
         });
   }

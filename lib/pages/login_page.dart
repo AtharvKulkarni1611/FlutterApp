@@ -9,7 +9,6 @@ class Loginpage extends StatefulWidget {
 }
 
 class _LoginpageState extends State<Loginpage> {
-  static const undefined = 'undefined';
   String name = "";
   bool changeButton = false;
   final _formKey = GlobalKey<FormState>();
@@ -20,7 +19,7 @@ class _LoginpageState extends State<Loginpage> {
         changeButton = true;
       });
       await Future.delayed(Duration(seconds: 1));
-      await Navigator.pushNamed(context, MyRoutes.homeroute);
+      await Navigator.pushNamed(context, MyRoutes.homeRoute);
       setState(() {
         changeButton = false;
       });
@@ -28,7 +27,6 @@ class _LoginpageState extends State<Loginpage> {
   }
 
   @override
-  @undefined
   Widget build(BuildContext context) {
     return Material(
       color: Colors.white,
