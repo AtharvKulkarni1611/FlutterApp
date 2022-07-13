@@ -12,7 +12,10 @@ class Homepage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text("Catalouge App"),
+        title: Text(
+          "Catalouge App",
+          style: TextStyle(color: Colors.black),
+        ),
       ),
       body: Center(
         child: Container(
