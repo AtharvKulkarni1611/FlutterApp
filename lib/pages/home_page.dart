@@ -9,8 +9,7 @@ class Homepage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const int days = 30;
-    const String Name = "Atharv Kulkarni";
+    final dummyList = List.generate(50, (index) => CatalogModel.items[0]);
 
     return Scaffold(
       appBar: AppBar(
@@ -23,11 +22,11 @@ class Homepage extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: ListView.builder(
-          itemCount: CatalogModel.items.length,
+          itemCount: dummyList.length,
           itemBuilder: (context, index) {
             //index gives postion
             return ItemWidget(
-              item: CatalogModel.items[index],
+              item: dummyList[index],
             );
           },
         ),
