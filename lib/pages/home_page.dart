@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:test_app/models/catalouge.dart';
 
+import '../widgets/Item_Widget.dart';
 import '../widgets/drawer.dart';
 
 class Homepage extends StatelessWidget {
@@ -17,11 +19,20 @@ class Homepage extends StatelessWidget {
           style: TextStyle(color: Colors.black),
         ),
       ),
-      body: Center(
-        child: Container(
-          child: Text("My First Flutter App in $days days by $Name"),
+
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: ListView.builder(
+          itemCount: CatalogModel.items.length,
+          itemBuilder: (context, index) {
+            //index gives postion
+            return ItemWidget(
+              item: CatalogModel.items[index],
+            );
+          },
         ),
-      ),
+      ), //render items as the screen is scrolled
+
       drawer: MyDrawer(),
     );
   }
