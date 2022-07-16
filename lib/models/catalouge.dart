@@ -48,5 +48,3 @@ class Item {
 }
 
 //creating products
-
-
