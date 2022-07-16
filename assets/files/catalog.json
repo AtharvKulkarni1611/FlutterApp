@@ -18,11 +18,11 @@
         },
         {
             "id": 3,
-            "name": "M1 Macbook Air",
+            "name": "M2 Macbook Air",
             "desc": "Apple Macbook air with apple silicon",
             "price": 1099,
             "color": "#e0bfae",
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMOMstwtmLnjFb3NHiDJ_kcQnueNVH-rv_3ps96HZmXlFumKWaiBqq_L4Uoyx3iFiNTrXNEbyB&usqp=CAc"
+            "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/macbook-air-midnight-gallery1-20220606?wid=2000&hei=1536&fmt=jpeg&qlt=95&.v=1653668113964"
         },
         {
             "id": 4,
@@ -38,15 +38,15 @@
             "desc": "Apple Aipods Pro 1st generation",
             "price": 200,
             "color": "#e3e4e9",
-            "image": "https://rukminim1.flixcart.com/image/416/416/kpinwy80/headphone/r/1/q/mwp22hn-a-apple-original-imag3qe9eqkfhmg8.jpeg?q=70"
+            "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MWP22_AV1?wid=1000&hei=1000&fmt=jpeg&qlt=95&.v=1591634652000"
         },
         {
             "id": 6,
             "name": "iPad Pro",
-            "desc": "Apple iPad Pro 2020 edition",
+            "desc": "Apple iPad Pro 2022 edition",
             "price": 799,
             "color": "#f73984",
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNzUeRQ5uH7E3hpECib8qxdhfHv6SnUGT7mOsew_xiOoqRR7ZpdH-TQ4J6-HuIEfqHimYyPXWH&usqp=CAc"
+            "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/ipad-pro-12-11-select-202104_GEO_IN?wid=545&hei=550&fmt=jpeg&qlt=95&.v=1617864721000"
         },
         {
             "id": 7,
