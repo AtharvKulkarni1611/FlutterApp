@@ -12,9 +12,9 @@ class HomeDetailPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(backgroundColor: Colors.transparent),
-      backgroundColor: MyTheme.creamcolor,
+      backgroundColor: context.canvasColor,
       bottomNavigationBar: Container(
-        color: Colors.white,
+        color: context.cardColor,
         child: ButtonBar(
           alignment: MainAxisAlignment.spaceBetween,
           buttonPadding: EdgeInsets.zero,
@@ -23,7 +23,8 @@ class HomeDetailPage extends StatelessWidget {
             ElevatedButton(
               onPressed: () {},
               style: ButtonStyle(
-                  backgroundColor: MaterialStateProperty.all(MyTheme.DarkBlue),
+                  backgroundColor:
+                      MaterialStateProperty.all(context.theme.buttonColor),
                   shape: MaterialStateProperty.all(StadiumBorder())),
               child: "Add to cart".text.make(),
             ).wh(150, 60),
@@ -43,9 +44,10 @@ class HomeDetailPage extends StatelessWidget {
             arcType: VxArcType.CONVEY,
             edge: VxEdge.TOP,
             child: Container(
+              color: context.cardColor,
               width: context.screenWidth,
               child: Column(children: [
-                catalog.name.text.xl4.color(MyTheme.DarkBlue).bold.make(),
+                catalog.name.text.xl4.color(context.accentColor).bold.make(),
                 catalog.desc.text.xl.textStyle(context.captionStyle).make(),
                 10.heightBox,
                 "Amet dolore lorem aliquyam amet elitr tempor dolore eirmod sit diam. Labore sea dolore gubergren amet ea ipsum stet dolor. Lorem duo sit lorem amet justo amet no et. Takimata invidunt ."
