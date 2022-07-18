@@ -19,13 +19,13 @@ class MyApp extends StatelessWidget {
     //Return type of build is widget
 
     return MaterialApp(
-        themeMode: ThemeMode.dark,
+        themeMode: ThemeMode.system,
         theme: MyTheme.lightTheme,
         darkTheme: MyTheme.darkTheme,
         debugShowCheckedModeBanner: false,
         initialRoute: "/",
         routes: {
-          "/": (context) => Loginpage(),
+          "/": (context) => Homepage(),
           MyRoutes.homeRoute: (context) => Homepage(),
           MyRoutes.loginRoute: (context) => Loginpage(),
           MyRoutes.cartRoute: (context) => CartPage(),
