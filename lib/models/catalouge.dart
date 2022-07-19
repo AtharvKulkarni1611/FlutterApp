@@ -1,10 +1,15 @@
 class CatalogModel {
-  static List<Item> items = [
-    //static to access it directly using class
-  ];
+  static final catModel = CatalogModel._internal();
+
+  CatalogModel._internal();
+
+  factory CatalogModel() => catModel;
+
+  static List<Item> items = [];
+  //static to access it directly using class
+
   //get items by id
-  Item getbyID(int id) =>
-      items.firstWhere((element) => element.id == id, orElse: null);
+  Item getbyID(int id) => items.firstWhere((element) => element.id == id);
 
   //get elements by id
 
